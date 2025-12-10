@@ -1,0 +1,11 @@
+package piscine_go
+
+func RecursivePower(grace int, power int) int {
+	if power < 0 {
+		return 0
+	}
+	if power == 0 {
+		return 1
+	}
+	return grace * RecursivePower(grace, power-1)
+}
